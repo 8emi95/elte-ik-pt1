@@ -1,0 +1,84 @@
+01 no line (empty) NOSUCH
+02 more shapes ILLEGAL
+03 no line (less shapes then necessary) NOSUCH
+04 side length ILLEGAL
+05 asd FORMAT
+06 asd FORMAT
+07 unknown NOSUCH
+08 not enough / too much NOSUCH
+09 not enough / too much NOSUCH
+10 not enough / too much NOSUCH
+11 first line shape FORMAT
+12 first line not number FORMAT
+
+11 gut (1)
+12 gut (2)
+13 gut (3)
+14 gut (4)
+
+
+	/*
+	pont benne van-e
+	http://www.gyakorikerdesek.hu/tudomanyok__alkalmazott-tudomanyok__7418336-komolyabb-koordinata-geometria-pont-benne-van-e-a-sokszogben
+
+	!!!!!!!!!!!!!!!
+	http://stackoverflow.com/questions/11716268/point-in-polygon-algorithm
+
+	csúcspontkoordináták
+	https://prog.hu/tudastar/126636/szabalyos-harom-es-hatszog-csucskoordinatai
+
+	köré írt kör r = a / (2*sin(180°/n))
+
+	http://stackoverflow.com/questions/3436453/calculate-coordinates-of-a-regular-polygons-vertices
+	(x,y)
+	for (i = 0; i < n; i++) {
+		printf("%f %f\n",x + r * Math.cos(2 * Math.PI * i / n), y + r * Math.sin(2 * Math.PI * i / n));
+	}
+
+	x + r*cos(2 * pi*i/n)
+	y + r*sin(2 * pi*i/n)
+
+
+	http://www.geeksforgeeks.org/how-to-check-if-a-given-point-lies-inside-a-polygon/
+	http://stackoverflow.com/questions/15958434/how-to-check-if-a-point-is-inside-a-polygon
+	http://www.sanfoundry.com/java-program-check-whether-given-point-lies-given-polygon/
+	https://github.com/sromku/polygon-contains-point
+	*/
+
+
+	/*
+	https://prog.hu/tudastar/183835/koordinata-benne-van-e-a-korben
+	K(u,v), r
+	P(x,y)
+	(u-x)^2 + (v-y)^2 < r^2
+	*/
+
+/*
+		double vertx[this.n];
+		double verty[this.n];
+		for (i = 0; i < this.n; i++) {
+			vertx[i] = this.center.x + r * Math.cos(2 * Math.PI * i / this.n);
+			verty[i] = this.center.y + r * Math.sin(2 * Math.PI * i / this.n);
+		}
+
+		int i, j, c = 0;
+		for (i = 0, j = this.n-1; i < this.n; j = i++) {
+			if ( ((verty[i]>point.y) != (verty[j]>point.y)) && (point.x < (vertx[j]-vertx[i]) * (point.y-verty[i]) / (verty[j]-verty[i]) + vertx[i]) ) {
+				c = !c;
+			}
+		}
+*/
+
+
+
+
+***********
+
+			for (Shape shape : shapes) {
+				System.out.println(shape.getClass().toString() + " " + shape.center.x + " " + shape.center.y + " " + shape.side);
+			}
+			System.out.println(shapes.size());
+
+
+
+				System.out.println(shapes.get(i).getClass().toString());

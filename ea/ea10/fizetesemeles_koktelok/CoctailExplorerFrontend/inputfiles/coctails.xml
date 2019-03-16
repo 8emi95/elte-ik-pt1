@@ -1,0 +1,75 @@
+<?xml version="1.0"?>
+<Coctails>
+	<Coctail>
+		<Name>Tequila Sunrise</Name>
+		<Ingredient>Tequila</Ingredient>
+		<Ingredient>Narancslé</Ingredient>
+		<Ingredient>Grenadine</Ingredient>
+	</Coctail>
+		<Name>Sex on the beach</Name>
+		<Ingredient>Vodka</Ingredient>
+		<Ingredient>Narancslé</Ingredient>
+		<Ingredient>Barack likőr</Ingredient>
+		<Ingredient>Áfonyalé</Ingredient>
+	<Coctail>
+		<Name>Cuba Libre</Name>
+		<Ingredient>Fehér rum</Ingredient>
+		<Ingredient>Kóla</Ingredient>
+		<Ingredient>Jég</Ingredient>
+		<Ingredient>Limelé</Ingredient>
+	</Coctail>
+	<Coctail>
+		<Name>Pink Cadillac</Name>
+		<Ingredient>Vodka</Ingredient>
+		<Ingredient>Amaretto</Ingredient>
+		<Ingredient>Citromlé</Ingredient>
+		<Ingredient>Eperszirup</Ingredient>
+	</Coctail>
+	<Coctail>
+		<Name>Pina Colada</Name>
+		<Ingredient>Fehér rum</Ingredient>
+		<Ingredient>Kókusz szirup</Ingredient>
+		<Ingredient>Tejszín</Ingredient>
+		<Ingredient>Ananászlé</Ingredient>
+	</Coctail>
+	<Coctail>
+		<Name>Swimming Pool</Name>
+		<Ingredient>Vodka</Ingredient>
+		<Ingredient>Blue Curacao</Ingredient>
+		<Ingredient>Kókusz szirup</Ingredient>
+		<Ingredient>Tejszín</Ingredient>
+		<Ingredient>Ananászlé</Ingredient>
+	</Coctail>
+	<Coctail>
+		<Name>Bloody Mary</Name>
+		<Ingredient>Vodka</Ingredient>
+		<Ingredient>Paradicsomlé</Ingredient>
+		<Ingredient>Citromlé</Ingredient>
+		<Ingredient>Tabasco szósz</Ingredient>
+		<Ingredient>Só</Ingredient>
+		<Ingredient>Bors</Ingredient>
+		<Ingredient>Worcestershire szósz</Ingredient>
+	</Coctail>
+	<Coctail>
+		<Name>Mojito</Name>
+		<Ingredient>Fehér rum</Ingredient>
+		<Ingredient>Limelé</Ingredient>
+		<Ingredient>Mentalevél</Ingredient>
+		<Ingredient>Cukor</Ingredient>
+		<Ingredient>Ásványvíz</Ingredient>
+		<Ingredient>Jég</Ingredient>
+	</Coctail>
+	<Coctail>
+		<Name>Godfather</Name>
+		<Ingredient>Whisky</Ingredient>
+		<Ingredient>Amaretto</Ingredient>
+		<Ingredient>Jég</Ingredient>
+	</Coctail>
+	<Coctail>
+		<Name>White Russian</Name>
+		<Ingredient>Vodka</Ingredient>
+		<Ingredient>Kávélikőr</Ingredient>
+		<Ingredient>Tejszín</Ingredient>
+		<Ingredient>Jég</Ingredient>
+	</Coctail>
+</Coctails>

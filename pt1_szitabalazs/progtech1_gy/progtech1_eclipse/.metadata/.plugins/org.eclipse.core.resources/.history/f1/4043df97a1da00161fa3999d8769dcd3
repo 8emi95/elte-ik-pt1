@@ -1,0 +1,70 @@
+package nk_gy8_swing.gui;
+
+import javax.swing.*;
+import java.awt.*;
+
+public class SwingStartFrame extends JFrame{
+
+    public SwingStartFrame() throws HeadlessException {
+        initFrameProperties();
+
+        getContentPane().add(createHelloWorldLabel());
+    }
+
+    /**
+     * Eljárás, amely beállítja a keret tulajdonságait
+     */
+    private void initFrameProperties(){
+        /*
+         * JFrame-bõl örökölt metódus, mely segítségével megadhatjuk, hogy mi történjen akkor, ha az ablakon a
+         * bezárásra(X) kattintunk.
+         *
+         * Lehetõségeink:
+         * EXIT_ON_CLOSE - Kilépés
+         * HIDE_ON_CLOSE - Elrejtés
+         * DISPOSE_ON_CLOSE - Felszabadítás (Megszûnik az ablak, de a programunk fut tovább, ha van mit csinálnia)
+         * DO_NOTHING_ON_CLOSE - Nem csinál semmit.
+         *
+         * Mi mindíg az EXIT_ON_CLOSE-t fogjuk használni.
+         */
+        setDefaultCloseOperation(EXIT_ON_CLOSE);
+
+        /*
+         * Ablak címének a beállítása
+         */
+        setTitle("Swing Start");
+
+        /*
+         * A keret minimum és maximum méretének a beállítása
+         *  setMinimumSize(new Dimension(400, 400));
+         *  setMaximumSize(new Dimension(400, 400));
+         */
+
+        /*
+         * A keret aktuális méretének a beállítása
+         */
+        setSize(400, 400);
+
+        /*
+         * A keret átméretezésének a letiltása
+         */
+        setResizable(false);
+
+        /*
+         * A keret középre igazítása
+         */
+        setLocationRelativeTo(null);
+    }
+
+
+    /**
+     * Metódus, amely létrehoz egy 100x50-es, középre igazított cimkét Hello world! felirattal.
+     * @return Hello world! cimke
+     */
+    private JLabel createHelloWorldLabel(){
+        final JLabel label = new JLabel("Hello world!", JLabel.CENTER);
+        label.setPreferredSize(new Dimension(100, 50));
+        return label;
+    }
+}
+

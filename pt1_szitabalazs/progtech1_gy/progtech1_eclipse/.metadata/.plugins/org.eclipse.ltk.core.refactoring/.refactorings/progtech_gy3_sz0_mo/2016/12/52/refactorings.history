@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Move element &apos;Bag.iml&apos; to &apos;valdar&apos;&#x0D;&#x0A;- Original project: &apos;progtech_gy3_sz0_mo&apos;&#x0D;&#x0A;- Destination element: &apos;valdar&apos;&#x0D;&#x0A;- Original element: &apos;Bag.iml&apos;&#x0D;&#x0A;- Update references to refactored element" description="Move file" element1="Bag/Bag.iml" files="1" flags="589830" folders="0" id="org.eclipse.jdt.ui.move" policy="org.eclipse.jdt.ui.moveResources" qualified="false" references="true" stamp="1482800932385" target="Bag/src/hu/valdar" units="0" version="1.0"/>
+</session>

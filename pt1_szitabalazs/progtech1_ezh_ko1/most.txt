@@ -1,0 +1,20 @@
+most:
+egyiranyu kotes
+menu
+felugro ablak
+clean code
+deriveFont()
+
+jovo het:
+odavissza kotes
+idoszamlalas
+kivetel(?)
+JUnit(?)
+
+
+zh:
+model... architechtúra (model view?)
+clean code
+^lehet h nem kell (?)
+
+layoutmanager help olvasni

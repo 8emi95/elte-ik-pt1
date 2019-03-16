@@ -1,0 +1,29 @@
+Sudoku
+
+Készítsünk egy Sudoku programot.
+
+1.
+- A tábla legyen 9×9-es, a táblán gombokkal. A legtöbb gomb kezdetben üres, néhány ki van töltve egy feladvány kezõdállásával - ezeket nyugodtan adjuk meg kódból
+- A gombokra kattintva egyre növekedjen a megjelenített értéke 1-tõl 9-ig. "Üres" már ne lehessen olyan, amire egyszer kattintottunk
+- A 3×3-as kis blokkok kerete legyen vastagabb, mint egy sima mezõé
+
+2.
+- Ellenõrizzük a gyõzelmi feltételt - minden mezõ legyen kitöltve, és minden szám minden sorban, oszlopban és blokkban pontosan egyszer szerepelhet
+- Ha nyertünk, veregessük hátba a felhasználót, majd indítsuk újra a játékot
+
+3.
+- Vezessünk be egy újraindítás gombot
+- Vezessünk be egy számlálót, ami MM:SS alakban jelzi az eddig eltelt idõt a legutóbbi játékindítás óta
+
+4.
+- A program kövesse a MV architektúrát, és feleljen meg a Clean Code-nak
+
++1.
+- Jobb klikkel kattintva töröljük egy mezõ értékét
+- Ne lehessen a néhány alapból megadott mezõ értékét módosítani se bal, se jobb klikkel
+
++2.
+- Újraindításkor dönthessük el, hogy mekkora legyen a tábla - 4, 9, 16 legyen a három lehetséges méret
+
++3.
+- Színezzük be pirossal azokat a mezõket, amik értéke nem helyes (mert van már ilyen elem a sorban, oszlopban, blokkban), és sárgával az üresm mezõket

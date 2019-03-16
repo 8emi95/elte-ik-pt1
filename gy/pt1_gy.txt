@@ -1,0 +1,129 @@
+2017.09.12
+1. Progtech1 GY
+
+UML
+osztálydiagram
+CASE (Computer Aided Software Engineering)
+Sparx Systems Enterprise Architect
+IDE
+
+ezt mind bakker... 9-11:22+
+
+************************************************************
+
+2017.09.19
+2. Progtech1 GY
+
+netbeans ide 8.2
+new project - java - java application
+project location
+
+
+EA Academic
+
+UML:
+Rulett
++main(args: String[]): void
+
+ki:"Rulett"
+nyeroSzam = (int)(Math.random()*37)
+ki: nyeroSzam
+0 - bank
+<=12 - 1. tucat
+<=24 - 2. tucat
+else - 3. tucat
+
+************************************************************
+
+2017.09.26
+3. Progtech1 GY
+
+4kor.hu
+vmi java1 könyv
+55. oldal
+
+sout + tab = println
+
+extra.Consoloe
+Libraries jobb - add jar/folder - javalib.jar
+
+F:\pt1\javaprog\_OOTPJava2\Esettanulmanyok\javalib_project\src\extra\Console.java
+
+összeadó program
+bankszámlakezelő
+
+************************************************************
+
+2017.10.03
+4. Progtech1 GY
+
+bead1 őszi utáni 1. hét
+bead2 utsó hét
+
+************************************************************
+
+2017.10.10
+5. Progtech1 GY
+
+oh wow írtunk vmit
+
+************************************************************
+
+2017.10.17
+6. Progtech1 GY
+
+enterprise architect - local file - new project
+use case, dynamical, logical
+
+class right click - find in all diagrams
+class right click - code engineering - generate source code
+class right click - code engineering - synchronize with code
+
+************************************************************
+
+2017.10.24
+7. Progtech1 GY
+
+?
+
+************************************************************
+
+2017.11.07
+8. Progtech1 GY
+
+bead ellenőrzés
+
+************************************************************
+
+2017.11.14
+9. Progtech1 GY
+
+// absent
+
+************************************************************
+
+2017.11.21
+10. Progtech1 GY
+
+// absent
+
+************************************************************
+
+2017.11.28
+11. Progtech1 GY
+
+//
+
+************************************************************
+
+2017.12.05
+12. Progtech1 GY
+
+// absent
+
+************************************************************
+
+2017.12.12
+13. Progtech1 GY
+
+bead ellenőrzés?

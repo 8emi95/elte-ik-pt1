@@ -1,0 +1,40 @@
+Felhasználói dokumentáció - Címjegyzék program
+Indítás: Cimjegyzek.jar
+
+A futtatás szoftver feltételei:
+- JDK 1.3 vagy nagyobb verziójú Java futtató 
+  környezet.
+
+A program személyek adatait tartja nyilván. 
+Egy személyhez tartozó bejegyzéshez a következõ 
+adatok tartoznak: 
+- név: max. 20 karakter
+- irányítószám: 4 szám
+- város: max. 20 karakter
+- cím: max. 20 karakter
+- telefon: max. 15 karakter
+
+A már felvitt személyek nevei egy ablakban 
+görgethetõk, ABC szerint rendezetten. 
+Két egyforma név lehetséges. 
+A személyek adatait a program az "adatok/cimjegyzek.dat" 
+állományban tartja nyilván.
+
+Funkciók:
+- Új bejegyzés felvitele: Indítás: Új nyomógomb, 
+  vagy Ins billentyû. Megjelenik egy üres dialógusdoboz 
+  a személy adatainak kitöltéséhez. 
+  Az ablak alján két gomb: Ok és Mégsem. 
+
+- Meglévõ bejegyzés módosítása: 
+  Indítás: Módosítás nyomógomb, vagy a néven Enter. 
+  Megjelenik egy dialógusdoboz a személy adataival. 
+  Az adatok átírhatók. 
+  Az ablak alján két gomb: Ok és Mégsem. 
+- Bejegyzés törlése: Indítás: Név kijelölése, 
+  aztán Törlés nyomógomb, vagy Delete billentyû. 
+  Megjelenik egy dialógusdoboz a személy adataival, 
+  benne a "Biztos törölni akarja?" kiírás. 
+  Elfogadás esetén a személyt töröljük a nyilvántartásból. 
+- Kilépés a programból: Indítás: Kilép nyomógomb, 
+  vagy az ablak becsukása.

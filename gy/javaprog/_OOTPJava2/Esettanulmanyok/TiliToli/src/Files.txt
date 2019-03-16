@@ -1,0 +1,11 @@
+src\TiliToli.java
+src\play\Config.java
+src\play\PlayPanel.java
+src\play\PlayObserver.java
+src\play\Result.java
+src\gui\AboutDialog.java
+src\gui\ConfigDialog.java
+src\gui\HelpDialog.java 
+src\gui\NameDialog.java
+src\gui\TiliToliFrame.java
+

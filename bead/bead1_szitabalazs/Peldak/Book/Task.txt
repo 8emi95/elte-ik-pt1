@@ -1,0 +1,3 @@
+Könyves Kálmán azt szeretné kiszámolni, mennyi ideig tartana elolvasni az összes könyvét.
+Alapból egy oldalt 3 perc alatt olvas el.
+Ha a könyv krimi, akkor az utolsó 100 oldalát 2 perc/oldal sebességgel falja; ha orosz dráma, akkor az egészet 4 perc/oldallal; ha fantasy, akkor 100 oldalanként váltakozva 4 ill. 3 perc/oldal sebességgel olvas. Mindegyik könyv lehet kötelező olvasmány is, ekkor a szükséges percek megduplázódnak.

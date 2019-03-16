@@ -1,0 +1,6 @@
+Adott egy n×n-es üres tábla. Minden másodpercben véletlenszerû helyre generálódik egy [1..n]-beli véletlenszám. Ha a pálya teljesen betelik, 
+a játékos veszt és a játék véget ér.
+A mezõkre lehet kattintani. Ha a játékos rákattint egy 1-es számot tartalmazó mezõre, a mezõ eltûnik. 
+Ha rákattint egymás után két 2-es számot tartalmazó mezõre, a mezõk eltûnnek, stb. Ha egy ilyen sorozat közben egy más értékû mezõre 
+(vagy üres mezõre) kattint, a sorozat megszakad.
+Lehet új játékot kezdeni, n értéke 3 és 8 között adható meg. A default értéke 5.

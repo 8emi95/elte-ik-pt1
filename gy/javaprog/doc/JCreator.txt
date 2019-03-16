@@ -1,0 +1,19 @@
+JCREATOR fejlesztõkörnyezet (Xinox Software)
+
+Kicsi, könnyen kezelhetõ környezet. Szükséges hozzá JDK-t telepíteni.
+
+Két változata van: 
+- JCreator LE (ingyenes)
+- JCreator Pro
+
+Letölthetõ a következõ helyrõl: http://www.jcreator.com/
+
+
+A javalib (benne az extra csomag) konfigurálása JCreatorban:
+
+Configure/Options.../JDK Profiles/Kiválasztás (pl. jdk1.4.1)/Edit.../Add...
+
+Hozzá lehet adni a jar fájlt vagy az útvonalat:
+
+Add Package.../Kiválasztás (C:/javaprog/lib/javalib.jar)    // Ez az ajánlott
+Add Path... /Kiválasztás (C:/javaprog/lib/javalib)

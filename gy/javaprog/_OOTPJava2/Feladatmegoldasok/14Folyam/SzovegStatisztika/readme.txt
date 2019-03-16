@@ -1,0 +1,1 @@
+A proba.txt állományt a work könyvtárba kell másolni!

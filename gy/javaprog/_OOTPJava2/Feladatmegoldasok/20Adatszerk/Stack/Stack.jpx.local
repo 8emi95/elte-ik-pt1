@@ -1,0 +1,16 @@
+build.menu.1[0]=com.borland.jbuilder.build.ProjectBuilder$ProjectBuildAction;make
+build.menu.2[0]=com.borland.jbuilder.build.ProjectBuilder$ProjectBuildAction;rebuild
+debug.NoTracingClasses.1[0]=16 java.lang.Object1  1 -1
+debug.NoTracingClasses.2[0]=21 java.lang.ClassLoader1  1 -1
+debug.NoTracingClasses.3[0]=16 java.lang.String1  1 -1
+debug.SplitThreadsAndDataView[0]=0
+history.files.active[0]=src/StackApp.java
+history.files.open.1[0]=src/extra/util/ArrayStack.java,F;1,54
+history.files.open.2[0]=src/extra/util/IStack.java,F;1,3
+history.files.open.3[0]=src/extra/util/LinkedListStack.java,F;1,3
+history.files.open.4[0]=src/StackApp.java,F;1,3
+import.optimize.legacyPropertiesRead[0]=1
+nodechooser.packagePage[0]=extra
+packagebrowser.lastClassName[0]=extra
+sys.Author[0]=
+sys.DefaultPackage[0]=stack

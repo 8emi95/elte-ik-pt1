@@ -1,0 +1,6 @@
+csomag1\csomag11\Interfesz1.class
+csomag1\csomag11\Osztaly1.class
+csomag1\csomag11\Osztaly2.class
+csomag1\csomag12\csomag121\Osztaly3.class
+csomag1\csomag12\Osztaly4.class
+csomag2\Osztaly5.class

@@ -1,0 +1,4 @@
+netbeans ide 8.1
+new java application
+name: iroda
+stb...

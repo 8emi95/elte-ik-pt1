@@ -1,0 +1,7 @@
+Adott egy 4×4-es tábla, melynek minden mezõje véletlenszerûen be van színezve az alábbi színek közül valamelyikre: piros, sárga, kék. 
+A játékos kattinthat a mezõkre. Elõször ha az i-edik oszlop valamely mezõjére kattint, az i-edik oszlop összes színe megváltozik. 
+Majd, ha ez után a j-edik oszlop valamely mezõjére kattint, a j-edik oszlop összes mezõjének színe megváltozik. 
+És így tovább utána újra sorok, majd újra oszlopok szerint színezõdnek át a cellák. 
+A színváltások úgy mûködnek, hogy a piros mezõkbõl sárga, a sárgákból kék, a kékekbõl pedig piros lesz. 
+A játéknak akkor van vége, ha minden mezõ színe azonos lesz. Ekkor a játék kiírja, hogy hány lépésbõl (kattintásból) oldotta meg a játékos a rejtvényt. 
+Lehet új játékot is kezdeni.

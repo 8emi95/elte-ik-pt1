@@ -1,0 +1,1 @@
+Nincs html állomány, mert ez nem applet!

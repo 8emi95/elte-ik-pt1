@@ -1,0 +1,132 @@
+Angster Erzsébet: Objektumorientált tervezés és proramozás Java, I. kötet
+Forráskód melléklet
+
+Feladatmegoldások (a könyvben található sorrendben)
+
+
+02Szamlak (html)
+02Olimpia (html)
+02Tanulmany (html)
+
+05Emberek (html)
+05Szamla (html)
+
+06Osztalydiagamok (html)
+
+08GyusziJateka
+
+09Hurra1
+09Hurra2
+
+11JoLeszek
+11Jokivansag
+11Hasab
+11Osszead
+
+12Kifejezesek1
+12Kifejezesek2
+12Szamla
+12Piac
+12Gomb
+12AfaTartalom
+12Penzvaltas
+
+13Telek
+13Hordo
+13EvszamOszthato
+13Karakter
+13FonokFizetese
+13Udvariassag
+13SzamSzoveggel
+13LKoszones
+13Dolgozat
+
+14Szuret1
+14Szuret2
+14MunkasFelvetel
+14Kaloria
+14Szamsor
+14Diszitosor
+14Haromszog
+14NullaJegyek
+14NegyzetSzamok
+14KettoKozott
+14MennyiPenz
+14KarSzamol
+14SzamlaKifizetes
+14Primek
+14Buzaszemek
+14Terulet
+14LegKaloria
+14MinMaxHenger
+14Automata
+
+15SokszorKiir
+15Eljarasok
+15Fuggvenyek
+15Round
+15Primek
+
+16SzovegAlakit (String)
+16Leghosszabb
+16Megszamol
+16Ekezetcsere
+
+16SzoCsere (StringBuffer, paraméter)
+16Kivesz
+16LenString
+16BitKep
+16Tuvudsz
+16Kodolas
+16MegjegyzesKivesz
+
+16KarEloszlas (Csomagolás)
+16Atvaltas
+16NevAlakit
+
+16SzavakSzama (StringTokenizer)
+16Paragrafus
+16JegyekAtlaga
+
+17BorFesztival
+17RaktarProgram2
+17Emberek
+17PalcikaCimkezo
+17KetRaktarProgram
+
+18Szamok (Egydimenzios)
+18Sulyok
+18Borton
+18VeletlenEloszlas
+18KarStat
+18Primek
+18CegFizetesek
+18Azaz
+18MusoraTeren
+
+18Bokodes (Ketdimenzios)
+18MoziJegyek
+18JegyVegzodes
+18Szamlak
+
+18TombParam (Parameteratadas)
+18Osszead
+
+19VeletlenSzamok
+19Nevsor
+19RendNevek
+19Tengerek
+18HordoKereses
+18KarbRendezetlen
+18KarbKapNovel
+
+20SzamSorozat
+20TorpeProgram2
+20TorpeProgram3
+20DatumRend
+20Emberek2
+20RaktarProgram3
+20Bank2
+20Szerviz
+20FutoVerseny
+20Zoldseges

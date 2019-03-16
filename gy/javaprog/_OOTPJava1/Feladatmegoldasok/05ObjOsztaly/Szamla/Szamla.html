@@ -1,0 +1,220 @@
+<html xmlns:v="urn:schemas-microsoft-com:vml"
+xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1250">
+<meta name=ProgId content=FrontPage.Editor.Document>
+<meta name=Generator content="Microsoft FrontPage 5.0">
+<meta name=Originator content="Microsoft Word 10">
+<link rel=Edit-Time-Data href="Szamlak-a_files/editdata.mso">
+<title>Számla</title>
+<!--[if gte mso 9]><xml>
+ <w:WordDocument>
+  <w:SpellingState>Clean</w:SpellingState>
+  <w:GrammarState>Clean</w:GrammarState>
+  <w:HyphenationZone>21</w:HyphenationZone>
+  <w:BrowserLevel>MicrosoftInternetExplorer4</w:BrowserLevel>
+ </w:WordDocument>
+</xml><![endif]-->
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:Wingdings;
+	panose-1:5 0 0 0 0 0 0 0 0 0;
+	mso-font-charset:2;
+	mso-generic-font-family:auto;
+	mso-font-pitch:variable;
+	mso-font-signature:0 268435456 0 0 -2147483648 0;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-parent:"";
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman"; margin-left:0cm; margin-right:0cm; margin-top:0cm}
+h1
+	{mso-style-next:Normal;
+	margin-top:12.0pt;
+	margin-right:0cm;
+	margin-bottom:3.0pt;
+	margin-left:0cm;
+	mso-pagination:widow-orphan;
+	page-break-after:avoid;
+	mso-outline-level:1;
+	font-size:16.0pt;
+	font-family:Arial;
+	mso-font-kerning:16.0pt;
+	font-weight:bold;}
+a:link, span.MsoHyperlink
+	{color:blue;
+	text-decoration:underline;
+	text-underline:single;}
+a:visited, span.MsoHyperlinkFollowed
+	{color:purple;
+	text-decoration:underline;
+	text-underline:single;}
+p
+	{font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+span.SpellE
+	{mso-style-name:"";
+	mso-spl-e:yes}
+span.GramE
+	{mso-style-name:"";
+	mso-gram-e:yes}
+@page Section1
+	{size:595.3pt 841.9pt;
+	margin:70.85pt 70.85pt 70.85pt 70.85pt;
+	mso-header-margin:35.4pt;
+	mso-footer-margin:35.4pt;
+	mso-paper-source:0;}
+div.Section1
+	{page:Section1;}
+ /* List Definitions */
+ @list l0
+	{mso-list-id:1796174051;
+	mso-list-type:hybrid;
+	mso-list-template-ids:622126706 -75965014 68026371 68026373 68026369 68026371 68026373 68026369 68026371 68026373;}
+@list l0:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F02D;
+	mso-level-tab-stop:36.0pt;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	font-family:Symbol;}
+ol
+	{margin-bottom:0cm;}
+ul
+	{margin-bottom:0cm;}
+-->
+</style>
+<!--[if gte mso 10]>
+<style>
+ /* Style Definitions */
+ table.MsoNormalTable
+	{mso-style-name:"Table Normal";
+	mso-tstyle-rowband-size:0;
+	mso-tstyle-colband-size:0;
+	mso-style-noshow:yes;
+	mso-style-parent:"";
+	mso-padding-alt:0cm 5.4pt 0cm 5.4pt;
+	mso-para-margin:0cm;
+	mso-para-margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Times New Roman"}
+</style>
+<![endif]-->
+<meta name=Template content="C:\Program Files\Microsoft Office\Office\html.dot">
+</head>
+
+<body lang=HU link=blue vlink=purple style='tab-interval:35.4pt'>
+
+<div class=Section1>
+
+<p><span class=SpellE><span style='font-size:14pt'>Angster</span></span><span style="font-size: 14pt"> Erzsébet: OO tervezés és programozás, Java I. kötet</span></p>
+
+<p><span style='font-size:14pt'>Feladatmegoldások / 5. fejezet<br>
+</span><font style="font-size: 14pt">Szamla.html<br>
+</font><span style="font-size: 14pt">Készítette: Andor Gergely, 2003<span class=GramE>.03</span>.01.</span></p>
+
+<hr>
+
+<h1>Számla osztály UML ábrája</h1>
+
+<p align="center"><img border="0" src="Szamla.jpg" width="201" height="155"></p>
+
+</div>
+
+<div class=Section1>
+
+<hr>
+
+<h1 style="margin-bottom: 12pt">Számla osztály p<span class=SpellE>szeudokód</span><o:p>ja</o:p></h1>
+
+<p style="margin-top: 6; margin-bottom: 6"><font size="4">class Számla {<br>
+&nbsp;&nbsp;&nbsp; összeg : number<br>
+<br>
+&nbsp;&nbsp;&nbsp; Számla(nyitóÖsszeg : number)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; összeg = nyitóÖsszeg<br>
+&nbsp;&nbsp;&nbsp; end Számla<br>
+<br>
+&nbsp;&nbsp;&nbsp; Számla()<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Számla(0)<br>
+&nbsp;&nbsp;&nbsp; end Számla<br>
+<br>
+&nbsp;&nbsp;&nbsp; getÖsszeg() : number<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; return összeg<br>
+&nbsp;&nbsp;&nbsp; end getÖsszeg() <br>
+<br>
+&nbsp;&nbsp;&nbsp; betesz(mennyit : number) : boolean<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; if (mennyit &gt; 0)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; összeg = 
+összeg + mennyit<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; return true<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; else<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; return false</font></p>
+
+<p style="margin-top: 6; margin-bottom: 6"><font size="4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+end if<br>
+&nbsp;&nbsp;&nbsp; end betesz<br>
+<br>
+&nbsp;&nbsp;&nbsp; kivesz(mennyit : number) : boolean<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; if (mennyit &gt; 0 &amp; mennyit &lt;= összeg)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; összeg = 
+összeg - mennyit<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; return true<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; else<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; return false</font></p>
+
+<p style="margin-top: 6; margin-bottom: 6"><font size="4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+end if<br>
+&nbsp;&nbsp;&nbsp; end kivesz</font></p>
+
+<p style="margin-top: 6; margin-bottom: 6"><font size="4">end Számla</font></p>
+
+<p style="margin-top: 6; margin-bottom: 6">&nbsp;</p>
+
+</div>
+
+<div class=Section1>
+
+<hr>
+
+<h1 style="margin-bottom: 12pt">Számla osztály használatának p<span class=SpellE>szeudokód</span><o:p>ja</o:p></h1>
+
+</div>
+
+<p style="margin-top: 6; margin-bottom: 6"><font size="4">számla1 : Számla</font></p>
+<p style="margin-top: 6; margin-bottom: 6"><font size="4">számla2 : Számla</font></p>
+<p style="margin-top: 6; margin-bottom: 6"><font size="4">számla3 : Számla</font></p>
+<p style="margin-top: 6; margin-bottom: 6">&nbsp;</p>
+<p style="margin-top: 6; margin-bottom: 6"><font size="4">számla1 = new Számla()<br>
+out : &quot;Számla 1: &quot; , számla1.getÖsszeg()<br>
+számla1.betesz(10000)<br>
+out : &quot;Számla 1: &quot; , számla1.getÖsszeg()<br>
+<br>
+számla2 = new Számla(számla1.getÖsszeg())<br>
+out : &quot;Számla 2: &quot; , számla2.getÖsszeg()<br>
+számla2.betesz(20000)<br>
+out : &quot;Számla 2: &quot;+számla2.getÖsszeg()<br>
+<br>
+összeg : number</font></p>
+<p style="margin-top: 6; margin-bottom: 6"><font size="4">in : összeg</font></p>
+<p style="margin-top: 6; margin-bottom: 6"><font size="4">if 
+(számla2.kivesz(összeg))<br>
+&nbsp;&nbsp;&nbsp; számla3 = new Számla(összeg)<br>
+&nbsp;&nbsp;&nbsp; out : &quot;Számla 2: &quot; , számla2.getÖsszeg()<br>
+&nbsp;&nbsp;&nbsp; out : &quot;Számla 3: &quot; , számla3.getÖsszeg()<br>
+else<br>
+&nbsp;&nbsp;&nbsp; out : &quot;Nincs &quot; , összeg , &quot; forint a második számlán!&quot;<br>
+&nbsp;</font></p>
+
+</body>
+
+</html>

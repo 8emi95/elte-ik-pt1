@@ -1,0 +1,4 @@
+Elso sor
+	Masodik sor, elõtte TAB
+		Harmadik sor, elõtte 2 TAB
+Ezután TAB	Megint egy TAB	Vége

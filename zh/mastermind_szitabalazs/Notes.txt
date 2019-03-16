@@ -1,0 +1,30 @@
+Elégséges:
+- Oda-vissza kötéssel csináltam meg, a Model persze interfészen keresztül látja a View-t, nincs kódbeli dependencia
+- A színekkel kapcsolatos mindent a View-ba raktam, mert a játék "szabályai" szempontjából a színek irrelevánsak
+- A mezőket tehát számokkal jelölöm. Kezdetben minden 0, ez a "semmi". Újra elolvasva a feladatot, ez talán felesleges, rögtön inicializálhattam volna mindent az első számra, de talán így is elfogadják :) Vegyük tehát figyelembe, hogy bár mindenféle tömbindexelés értelemszerűen 0-tól van most is, de a számok értékei 1-től!
+- Van két féle mezőfrissítő függvény. Az egyik arról szól, ha megnyomtál egy gombot, frissítse be a színét, a másik pedig a Tipp gombra való kattintáskor fut le és egy egész sort tilt le vagy engedélyez
+- A letiltás helyett akár írhattam volna úgy is, mint a 8 Királynőnél, hogy letiltva ugyan nincs, de a gombnyomás hatástalan
+- A konzolra kiírtam a helyes megoldást és a generált számok halmazát, ellenőrzési célokból. Mindenkit biztatok arra, hogy csináljanak hasonló kiírásokat, akár új menüpont bevezetésével, akár "csak" így, a konzolra. Utóbbi hamarabb kész van
+- A színhalmaz generálása (selectColors() metódus) még érdekes lehet: veszek egy listát, abba belerakom a 6 felsorolt színt. Összekeverem a listát, majd elhagyom belőle az első néhány elemet, hogy pont annyi maradjon, amennyi kell (esetünkben 4, de ezt már "általánosan" írtam meg a jövőre nézve)
+- Bár a feladat elvileg kérte, hogy legyenek címkék a szélén, mivel arról nem volt szó, hogy működjenek is, itt még kihagytam őket
+
+Közepes:
+- GG WP
+
+Jó:
+- Itt már megjelennek a címkék. Érdemes lehet esetleg úgy csinálni, hogy a topContainernek is BorderLayoutja van, ha bal szélére egy gridet rakunk (mint most az egész Containerre), és a jobb szélére a címkéket. Lehet, hogy egyszerűbb. Vagy fogunk egy tollat-papírt, és kiszámoljuk, hogy mit kell átírnunk a "képletben". Általában nem olyan bonyolultak, csak el kell tudni képzelni, vagy le kell rajzolni
+- Ha a másik megoldást választottuk volna, akkor nem kellett volna, hogy a sima gombok is hasonlóan szélesek legyenek, mint a címkék
+- Mivel új játékkor a címkéket, a gombokat és a Tipp gombot is frissíteni kellett volna, ezért inkább ilyenkor újrarajzoltatom az egész táblát mindenestül
+- A tipp kiértékeléséhez bevezettem egy külön osztályt, mert meglehetősen bonyolult volt az algoritmusa... Amennyire tudom a következők a szabályok:
+  * Jelezzük, hány telitalálatunk van
+  * Jelezzük, hogy ezeken kívül hány olyan szín van, aminek bár a pozícióját nem, de magát a létét eltaláltuk. Figyeljünk arra, hogy mindegyiket csak egyszer számoljuk. Azaz, ha van két zöldünk és a megoldásban is van két zöld, akkor ez 2, nem pedig 4. Ha az egyik zöld a helyén van, akkor 1 telitalálat és 1 (nem 2) részleges találat... stb.
+- A fenti gondolatmentet az alábbi módon foglaltam algoritmusba:
+  * Kiszámolom egy-egy Mapbe (azaz asszociatív tömbbe, olyan "tömb", aminek nem számok (vagy legalábbis nem feltétlenül számok 0-tól) az indexei, hanem bármi..., az én esetemben egy-egy szín kódja lett az), hogy melyik színből mennyi van a tippben és a megfejtésben
+  * Ezzel párhuzamosan a telitalálatokat is kiszámolom
+  * Végignézem a két mapet, és minden színre megnézem mennyi az, ami mindkettőben benne van. Ezeket összeadom. Figyeljünk, hogy itt 1-től indexeltem a ciklust, hiszen a színeken megyünk végig, az asszociatív tömb kulcsain, nem pedig hagyományos tömbindexeken
+  * Mivel a telitalálatok a fenti listában is benne vannak, ezért őket még kivonom belőle
+
+Cseles:
+- Itt most "saját" radio button csoportot hoztam létre
+- Arra kellett figyelni, hogy igazából a méret és a színek száma itt két külön szám, ezt kellett ketté választani
+- Kivettem a Launcherből az új játék indítását, mostantól inkább a showFrame() triggereli és így rögtön fel is dobódik a nehézségválasztó ablak

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="java.awt.GridLayout"/>
+<fullyQualifiedTypeName name="javax.swing.JButton"/>
+<fullyQualifiedTypeName name="java.awt.Dimension"/>
+<fullyQualifiedTypeName name="java.util.Stack"/>
+<fullyQualifiedTypeName name="javax.swing.text.Position"/>
+<fullyQualifiedTypeName name="java.awt.event.ActionListener"/>
+<fullyQualifiedTypeName name="java.awt.event.ActionEvent"/>
+<fullyQualifiedTypeName name="java.util.Objects"/>
+<fullyQualifiedTypeName name="javax.swing.JOptionPane"/>
+<fullyQualifiedTypeName name="javax.swing.JMenuBar"/>
+<fullyQualifiedTypeName name="javax.swing.JMenuItem"/>
+<fullyQualifiedTypeName name="javax.swing.JMenu"/>
+<fullyQualifiedTypeName name="java.awt.Color"/>
+</qualifiedTypeNameHistroy>

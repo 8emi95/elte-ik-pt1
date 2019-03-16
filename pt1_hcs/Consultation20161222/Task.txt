@@ -1,0 +1,27 @@
+Ez így az idézõjelek között (helyesírási hibástul...), egy az egyben egy zh volt:
+
+"Királynõk
+
+Készítsük el a Királynõk nevû egyszerû logikai játékot. Ehhez adott egy 8x8-as sakktábla, amelyen a királynõket úgy kell elhelyeznünk balról-jobbra oszloponként, hogy egyik oszlopba se tegyünk úgy királynõt, hogy a korábbiakat üsse (a királynõ függõlegesen, vízszintesen és átlósan is tetszõleges távolságra léphet). Mielõtt hozzákezd a feladat megoldásának, olvassa végig a feladatlapot, mivel bizonyos funkciók utólagos bevezetése esetlegesen más, korábbi funkciók újraírását eredményezheti.
+
+1. Hozza létre kódból a 8x8 darab gombot tartalmazó sakktáblát, és az eseménykezelõt a gombokhoz úgy, hogy mindig csak a sakktábla legelsõ üres oszlopába tehessünk királynõt.
+
+2. Ellenõrízzük, hogy olyan helyre akarja-e tenni a játékos az új királynõt, ahol nem üti egyik korábban elhelyezett sem, és ne engedjük lerakni a királynõt rossz helyre. Ha sikerült mind a 8 királynõt elhelyezni a táblán, akkor gratuláljunk a játékosnak egy dialógus ablakon megjelenített ?Gratulálok, nyertél!? felirattal, majd indítsuk újra a játékot.
+
+3. Hozzunk létre egy menüpontot, amellyel újrakezdhetjük a játékot, továbbá egy ?Visszavonás? menüpontot, amivel egyesével vissza lehet vonni a lépéseket (ezeket érdemes egy vektorban/listben tárolni). Jelenítsük meg, hogy adott pályaállás esetén mely mezõkre léphetünk, pl. a gomb háttérszínét színezzük ezeknél át (btn.seBackground(Color.GRAY);). Hozzunk létre egy menüpontot, amivel megállíthatjuk a játékot. Ekkor semmire sem lehet kattintani (vagy nincs hatása a kattintásnak), és nem is láthatjuk a pályán lévõ feliratokat. A menüpont újbóli használatával a játék mutassa újra a pályaállást és lehessen folytatni a játékot.
+
+4. Valósítsuk meg a játékot MV architektúrát alkalmazva, azaz egy külön osztályban legyen implementálva a játék táblájának modellje és az egyes mûveletei (lépések, visszavonás, sikerült-e bejárni a táblát).
+
+Használható segédanyagok: Könyv, nyomtatott jegyzet, tárgy honlapja és a rajta elérhetõ projektek, JavaDoc. A zárthelyi végén a legalább elégségesre osztályzott megoldásokat fel kell tölteni: >>webcím<<"
+
+
+A probléma egy lehetséges megoldása:
+
+O O O x O O O O
+O O O O O O x O
+O O x O O O O O
+O O O O O O O x
+O x O O O O O O
+O O O O x O O O
+x O O O O O O O
+O O O O O x O O

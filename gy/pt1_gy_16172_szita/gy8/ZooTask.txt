@@ -1,0 +1,21 @@
+We are the upkeepers of a zoo. The zoo has two lions and a fish.
+We have to add these animals to an array and provide a basic logging that informs user the names, species and sounds of the inhabitants of the zoo.
+
+We can assume the following:
+- Fish are mute
+- Every animal of one species has the same sound and has the same kind of diet
+- Cows are herbivore (eats Vegetables), Lions are carnivore (eats Animals), Fish are omnivore (eats both)
+
+Task1
+=====
+Add new instance of Animal to the Zoo (animals array):
+- Species: Cow
+- Name: "Milka"
+- Says: "moo"
+
+Task2
+=====
+- Introduce a new attribute to each animal, isFed : boolean, by default it is false
+- Introduce a new function void feed(? food), that should turn the boolean variable into true if the food is appropriate
+- Write for each animal whether it is fed or not
+- "?" can be: gazelle (Animal), grass (Vegetable)

@@ -1,0 +1,11 @@
+sudoku
+
+n*n tábla
+n
+- kattintás
+- idõ! (hány perce megy)
+- odavissza
+- skalazhatóság (mérete rugalmas)
+- új játék (nullázza a timert)
+- borderek (matte)
+

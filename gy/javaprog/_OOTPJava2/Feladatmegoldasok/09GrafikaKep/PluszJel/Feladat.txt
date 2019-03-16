@@ -1,0 +1,5 @@
+Tegyen a keretbe egy - a teljes keretet betöltõ - plusz jelet!
+
+a) (A) A plusz jel fekete színû, és vastagsága 1 pontos legyen! (PluszJelA.java)
+b) (A) A plusz jel zöld színû, és vastagsága 5 pontos legyen! (PluszJelB.java)
+c) (B) A plusz jel színe és vastagsága legyen paraméterezhetõ! Az adatokat a program elején kérjük be! (PluszJelC.java)

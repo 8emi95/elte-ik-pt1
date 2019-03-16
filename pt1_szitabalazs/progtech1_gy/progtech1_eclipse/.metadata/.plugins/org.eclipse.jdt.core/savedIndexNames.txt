@@ -1,0 +1,7 @@
+INDEX VERSION 1.129+D:\ELTE\16171\progtech1\progtech1_gy\progtech1_eclipse\.metadata\.plugins\org.eclipse.jdt.core
+1548530136.index
+2897267745.index
+3309690978.index
+2599032221.index
+3322454516.index
+1474258100.index

@@ -1,0 +1,5 @@
+asd
+circle 5 -6.2 3
+triangle -3 6 4
+square 8 6 1 4
+hexagon 5 5 2

@@ -1,0 +1,7 @@
+Java program készítése mellékelt objektum és osztálydiagram alapján.
+
+Hozzuk létre Java-ban a mellékelt objektumdiagramon látható Autó, Kerék, 
+és Motor osztályokat. Az Auto osztály konstruktorában hozzuk létre 
+a példányhoz tartozó 4 darab Kerék és 1 darab Motor objektumot. 
+Osztálydiagram alapján hozzuk létre a metódusokat, hogy az autóval
+gyorsítani és lassítani lehessen.

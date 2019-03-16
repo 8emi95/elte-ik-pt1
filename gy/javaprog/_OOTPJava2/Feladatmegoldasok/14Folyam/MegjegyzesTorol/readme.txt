@@ -1,0 +1,1 @@
+A Proba.java állományt a work könyvtárba kell másolni!

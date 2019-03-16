@@ -1,0 +1,30 @@
+source tree:
+------------
+base repo - jobb - branch - checkout new branch (konzolból checkoutolni kell)
+
+
+eclipse:
+--------
+new java project blablabla
+
+Main.java
+- (hu.elte.progtech.legion) public static maint generl hozzá
+- main osztály legion típust fog példányosítani
+- légiófelolvasó osztály (LegionParser)
+
+Legion.java
+- 
+
+Soldier.java
+- 
+
+LegionParser.java
+- 
+
+
+uml:
+----
+2 fv: - shuffle (eldugó) melyik kézben -> Hand
+	  - guess (megtaláló) sikerült-e kitalálni, tippelő katónát hívja meg
+
+katona lehetne interface de absztrakt osztály lesz

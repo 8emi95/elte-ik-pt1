@@ -1,0 +1,3 @@
+PontozoVaszon
+PontozoVaszon$EgerFigyelo
+Pontozo

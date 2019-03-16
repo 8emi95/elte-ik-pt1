@@ -1,0 +1,34 @@
+"Négy különbözõ nemzetiség képviselõje volt az asztalnál: egy amerikai gyalogos, egy francia õrvezetõ, egy angol géppuskás és egy orosz hússaláta. A gyalogos, az õrvezetõ és a géppuskás a padon foglaltak helyet, a hússaláta az asztalon, egy tálban."
+Rejtõ Jenõ - A három testõr Afrikában - részlet
+
+Egy asztalnál katonák ülnek. "Itt a hússaláta, hol a hússaláta" nevû játékot játszanak. Egyiküknél van egy hússaláta, amelyet a két keze között forgat. Egy véletlenszerûen kijelölt másik katonának tippelnie kell, hogy melyik kezében van. Ha eltalálja, akkor hozzá kerül a hússaláta.
+Igaz-e, hogy az n. kör végére már mindenkinél volt a hússaláta?
+
+Bemenetként adott egy fájl, aminek elsõ sora egy pozitív egész szám, az n értéke, utána pedig annyi sor van, ahány katona, mindegyikhez tartozik egy nemzetiség (egy nemzetiség többször is elõfordulhat) és utána vagy van egy * karakter, vagy nincs. Ha van, akkor kezdetben nála van a hússaláta. Pontosan egy * van a fájlban.
+
+pl.:
+5
+RUS
+ENG
+ENG*
+FRA
+
+Azaz, 5 kör van. Egy orosz, két angol (egyiknél a saláta) és egy francia katona van jelen.
+
+Nemzeti sajátosságok (melyik kezébe rejti el; melyikre tippel):
+
+RUS - orosz
+- Mindig a bal kezébe rejti el
+- Kémkedik az amerikai ellen, így az bárhova is rejti, meg fogja találni; különben mindig a balra tippel
+
+USA - amerikai
+- 25% eséllyel képes úgy eldugni, hogy ne találja meg senki, kivéve az orosz; amúgy 50-50% eséllyel rakja a bal v. jobb kezébe
+- 50-50%-kal a bal v. jobb kézre tippel
+
+ENG - angol
+- 50-50%
+- Ha ellenfele francia, akkor a bal kézre fog tippelni, különben 50-50%
+
+FRA - francia
+- Elõször véletlenszerûen rejti el, utána pedig mindig ellenkezõleg, mint ahogy legutóbb tette
+- A franciák összedolgoznak, szóval ha ellenfele francia, akkor biztos eltalálja. Az angol pedig átveri, azaz, ha az ellenfele angol, akkor biztos nem találja el. Különben 50-50%

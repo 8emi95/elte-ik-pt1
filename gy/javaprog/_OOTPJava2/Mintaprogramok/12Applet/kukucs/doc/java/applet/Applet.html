@@ -1,0 +1,328 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML><!--JBuilder QuickDoc-->
+<HEAD>
+<TITLE>Class java.applet.Applet</TITLE><META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+</HEAD>
+<BODY>
+
+<H2>
+<FONT SIZE="-1">java.applet</FONT>
+<BR>Class Applet</H2>
+<DL>
+<DT>public class <B>Applet</B><DT>extends Panel
+</DL>
+<DL><DD>An applet is a small program that is intended not to be run on its own, but rather to be embedded inside another application. <p> The <code>Applet</code> class must be the superclass of any applet that is to be embedded in a Web page or viewed by the Java Applet Viewer. The <code>Applet</code> class provides a standard interface between applets and their environment.<DL><DD></DD></DL></DD>
+</DL>
+<DL><DT><B>Version:</B><DD>1.72, 01/23/03</DD>
+<DT><B>Author:</B><DD>Arthur van Hoff</DD>
+<DD>Chris Warth</DD>
+<DT><B>Since:</B><DD>JDK1.0</DD>
+</DL>
+<TABLE BORDER="1" CELLPADDING="3" CELLSPACING="0" WIDTH="100%">
+<TR BGCOLOR="#CCCCFF"><TD COLSPAN=1><FONT SIZE="+2">
+<B>Field Detail</B>
+</FONT></TD></TR></TABLE>
+
+<H3>stub</H3>
+<PRE>
+private transient AppletStub <B>stub</B></PRE>
+<DL><DD>Applets can be serialized but the following conventions MUST be followed: Before Serialization: An applet must be in STOPPED state. After Deserialization: The applet will be restored in STOPPED state (and most clients will likely move it into RUNNING state). The stub field will be restored by the reader.<DL><DD></DD></DL></DD>
+</DL>
+<DL></DL>
+<HR>
+
+<TABLE BORDER="1" CELLPADDING="3" CELLSPACING="0" WIDTH="100%">
+<TR BGCOLOR="#CCCCFF"><TD COLSPAN=1><FONT SIZE="+2">
+<B>Constructor Detail</B>
+</FONT></TD></TR></TABLE>
+
+<H3>Applet</H3>
+<PRE>
+public <B>Applet</B>()</PRE>
+<DL><DD>Creates a new Applet object<DL><DD></DD></DL></DD>
+</DL>
+<DL><DT><B>Throws:</B><DD><CODE>HeadlessException</CODE> - if GraphicsEnvironment.isHeadless() returns true.</DD>
+<DT><B>Since:</B><DD>1.4</DD>
+<DT><B>See Also:</B><DD>java.awt.GraphicsEnvironment#isHeadless</DD>
+</DL>
+<HR>
+
+<TABLE BORDER="1" CELLPADDING="3" CELLSPACING="0" WIDTH="100%">
+<TR BGCOLOR="#CCCCFF"><TD COLSPAN=1><FONT SIZE="+2">
+<B>Method Detail</B>
+</FONT></TD></TR></TABLE>
+
+<H3>readObject</H3>
+<PRE>
+private void <B>readObject</B>(ObjectInputStream&nbsp;s)</PRE>
+<DL><DD>Read an applet from an object input stream.<DL><DD></DD></DL></DD>
+</DL>
+<DL><DT><B>Throws:</B><DD><CODE>HeadlessException</CODE> - if <code>GraphicsEnvironment.isHeadless()</code> returns <code>true</code></DD>
+<DT><B>Since:</B><DD>1.4</DD>
+<DT><B>See Also:</B><DD>java.awt.GraphicsEnvironment#isHeadless</DD>
+</DL>
+<HR>
+
+<H3>setStub</H3>
+<PRE>
+public final void <B>setStub</B>(AppletStub&nbsp;stub)</PRE>
+<DL><DD>Sets this applet's stub. This is done automatically by the system.<DL><DD></DD></DL></DD>
+</DL>
+<DL><DT><B>Parameters:</B><DD><CODE>stub</CODE> - the new stub.</DD>
+</DL>
+<HR>
+
+<H3>isActive</H3>
+<PRE>
+public boolean <B>isActive</B>()</PRE>
+<DL><DD>Determines if this applet is active. An applet is marked active just before its <code>start</code> method is called. It becomes inactive just before its <code>stop</code> method is called.<DL><DD></DD></DL></DD>
+</DL>
+<DL><DT><B>Returns:</B><DD><code>true</code> if the applet is active; <code>false</code> otherwise.</DD>
+<DT><B>See Also:</B><DD>java.applet.Applet#start()</DD>
+<DD>java.applet.Applet#stop()</DD>
+</DL>
+<HR>
+
+<H3>getDocumentBase</H3>
+<PRE>
+public URL <B>getDocumentBase</B>()</PRE>
+<DL><DD>Gets the URL of the document in which this applet is embedded. For example, suppose an applet is contained within the document: <blockquote><pre>
+http://java.sun.com/products/jdk/1.2/index.html
+</pre></blockquote> The document base is: <blockquote><pre>
+http://java.sun.com/products/jdk/1.2/index.html
+</pre></blockquote><DL><DD></DD></DL></DD>
+</DL>
+<DL><DT><B>Returns:</B><DD>the <A HREF="java.net.URL">java.net.URL</A> of the document that contains this applet.</DD>
+<DT><B>See Also:</B><DD>java.applet.Applet#getCodeBase()</DD>
+</DL>
+<HR>
+
+<H3>getCodeBase</H3>
+<PRE>
+public URL <B>getCodeBase</B>()</PRE>
+<DL><DD>Gets the base URL. This is the URL of the directory which contains this applet.<DL><DD></DD></DL></DD>
+</DL>
+<DL><DT><B>Returns:</B><DD>the base <A HREF="java.net.URL">java.net.URL</A> of the directory which contains this applet.</DD>
+<DT><B>See Also:</B><DD>java.applet.Applet#getDocumentBase()</DD>
+</DL>
+<HR>
+
+<H3>getParameter</H3>
+<PRE>
+public String <B>getParameter</B>(String&nbsp;name)</PRE>
+<DL><DD>Returns the value of the named parameter in the HTML tag. For example, if this applet is specified as <blockquote><pre>
+&lt;applet code="Clock" width=50 height=50&gt;
+&lt;param name=Color value="blue"&gt;
+&lt;/applet&gt;
+</pre></blockquote> <p> then a call to <code>getParameter("Color")</code> returns the value <code>"blue"</code>. <p> The <code>name</code> argument is case insensitive.<DL><DD></DD></DL></DD>
+</DL>
+<DL><DT><B>Parameters:</B><DD><CODE>name</CODE> - a parameter name.</DD>
+<DT><B>Returns:</B><DD>the value of the named parameter, or <code>null</code> if not set.</DD>
+</DL>
+<HR>
+
+<H3>getAppletContext</H3>
+<PRE>
+public AppletContext <B>getAppletContext</B>()</PRE>
+<DL><DD>Determines this applet's context, which allows the applet to query and affect the environment in which it runs. <p> This environment of an applet represents the document that contains the applet.<DL><DD></DD></DL></DD>
+</DL>
+<DL><DT><B>Returns:</B><DD>the applet's context.</DD>
+</DL>
+<HR>
+
+<H3>resize</H3>
+<PRE>
+public void <B>resize</B>(int&nbsp;width,
+                   int&nbsp;height)</PRE>
+<DL><DD>Requests that this applet be resized.<DL><DD></DD></DL></DD>
+</DL>
+<DL><DT><B>Parameters:</B><DD><CODE>width</CODE> - the new requested width for the applet.</DD>
+<DD><CODE>height</CODE> - the new requested height for the applet.</DD>
+</DL>
+<HR>
+
+<H3>resize</H3>
+<PRE>
+public void <B>resize</B>(Dimension&nbsp;d)</PRE>
+<DL><DD>Requests that this applet be resized.<DL><DD></DD></DL></DD>
+</DL>
+<DL><DT><B>Parameters:</B><DD><CODE>d</CODE> - an object giving the new width and height.</DD>
+</DL>
+<HR>
+
+<H3>showStatus</H3>
+<PRE>
+public void <B>showStatus</B>(String&nbsp;msg)</PRE>
+<DL><DD>Requests that the argument string be displayed in the "status window". Many browsers and applet viewers provide such a window, where the application can inform users of its current state.<DL><DD></DD></DL></DD>
+</DL>
+<DL><DT><B>Parameters:</B><DD><CODE>msg</CODE> - a string to display in the status window.</DD>
+</DL>
+<HR>
+
+<H3>getImage</H3>
+<PRE>
+public Image <B>getImage</B>(URL&nbsp;url)</PRE>
+<DL><DD>Returns an <code>Image</code> object that can then be painted on the screen. The <code>url</code> that is passed as an argument must specify an absolute URL. <p> This method always returns immediately, whether or not the image exists. When this applet attempts to draw the image on the screen, the data will be loaded. The graphics primitives that draw the image will incrementally paint on the screen.<DL><DD></DD></DL></DD>
+</DL>
+<DL><DT><B>Parameters:</B><DD><CODE>url</CODE> - an absolute URL giving the location of the image.</DD>
+<DT><B>Returns:</B><DD>the image at the specified URL.</DD>
+<DT><B>See Also:</B><DD>java.awt.Image</DD>
+</DL>
+<HR>
+
+<H3>getImage</H3>
+<PRE>
+public Image <B>getImage</B>(URL&nbsp;url,
+                      String&nbsp;name)</PRE>
+<DL><DD>Returns an <code>Image</code> object that can then be painted on the screen. The <code>url</code> argument must specify an absolute URL. The <code>name</code> argument is a specifier that is relative to the <code>url</code> argument. <p> This method always returns immediately, whether or not the image exists. When this applet attempts to draw the image on the screen, the data will be loaded. The graphics primitives that draw the image will incrementally paint on the screen.<DL><DD></DD></DL></DD>
+</DL>
+<DL><DT><B>Parameters:</B><DD><CODE>url</CODE> - an absolute URL giving the base location of the image.</DD>
+<DD><CODE>name</CODE> - the location of the image, relative to the <code>url</code> argument.</DD>
+<DT><B>Returns:</B><DD>the image at the specified URL.</DD>
+<DT><B>See Also:</B><DD>java.awt.Image</DD>
+</DL>
+<HR>
+
+<H3>newAudioClip</H3>
+<PRE>
+public static final AudioClip <B>newAudioClip</B>(URL&nbsp;url)</PRE>
+<DL><DD>Get an audio clip from the given URL.<DL><DD></DD></DL></DD>
+</DL>
+<DL><DT><B>Parameters:</B><DD><CODE>url</CODE> - points to the audio clip</DD>
+<DT><B>Returns:</B><DD>the audio clip at the specified URL.</DD>
+<DT><B>Since:</B><DD>1.2</DD>
+</DL>
+<HR>
+
+<H3>getAudioClip</H3>
+<PRE>
+public AudioClip <B>getAudioClip</B>(URL&nbsp;url)</PRE>
+<DL><DD>Returns the <code>AudioClip</code> object specified by the <code>URL</code> argument. <p> This method always returns immediately, whether or not the audio clip exists. When this applet attempts to play the audio clip, the data will be loaded.<DL><DD></DD></DL></DD>
+</DL>
+<DL><DT><B>Parameters:</B><DD><CODE>url</CODE> - an absolute URL giving the location of the audio clip.</DD>
+<DT><B>Returns:</B><DD>the audio clip at the specified URL.</DD>
+<DT><B>See Also:</B><DD>java.applet.AudioClip</DD>
+</DL>
+<HR>
+
+<H3>getAudioClip</H3>
+<PRE>
+public AudioClip <B>getAudioClip</B>(URL&nbsp;url,
+                              String&nbsp;name)</PRE>
+<DL><DD>Returns the <code>AudioClip</code> object specified by the <code>URL</code> and <code>name</code> arguments. <p> This method always returns immediately, whether or not the audio clip exists. When this applet attempts to play the audio clip, the data will be loaded.<DL><DD></DD></DL></DD>
+</DL>
+<DL><DT><B>Parameters:</B><DD><CODE>url</CODE> - an absolute URL giving the base location of the audio clip.</DD>
+<DD><CODE>name</CODE> - the location of the audio clip, relative to the <code>url</code> argument.</DD>
+<DT><B>Returns:</B><DD>the audio clip at the specified URL.</DD>
+<DT><B>See Also:</B><DD>java.applet.AudioClip</DD>
+</DL>
+<HR>
+
+<H3>getAppletInfo</H3>
+<PRE>
+public String <B>getAppletInfo</B>()</PRE>
+<DL><DD>Returns information about this applet. An applet should override this method to return a <code>String</code> containing information about the author, version, and copyright of the applet. <p> The implementation of this method provided by the <code>Applet</code> class returns <code>null</code>.<DL><DD></DD></DL></DD>
+</DL>
+<DL><DT><B>Returns:</B><DD>a string containing information about the author, version, and copyright of the applet.</DD>
+</DL>
+<HR>
+
+<H3>getLocale</H3>
+<PRE>
+public Locale <B>getLocale</B>()</PRE>
+<DL><DD>Gets the Locale for the applet, if it has been set. If no Locale has been set, then the default Locale is returned.<DL><DD></DD></DL></DD>
+</DL>
+<DL><DT><B>Returns:</B><DD>the Locale for the applet</DD>
+<DT><B>Since:</B><DD>JDK1.1</DD>
+</DL>
+<HR>
+
+<H3>getParameterInfo</H3>
+<PRE>
+public String[][] <B>getParameterInfo</B>()</PRE>
+<DL><DD>Returns information about the parameters that are understood by this applet. An applet should override this method to return an array of <code>Strings</code> describing these parameters. <p> Each element of the array should be a set of three <code>Strings</code> containing the name, the type, and a description. For example: <p><blockquote><pre>
+String pinfo[][] = {
+{"fps",    "1-10",    "frames per second"},
+{"repeat", "boolean", "repeat image loop"},
+{"imgs",   "url",     "images directory"}
+};
+</pre></blockquote> <p> The implementation of this method provided by the <code>Applet</code> class returns <code>null</code>.<DL><DD></DD></DL></DD>
+</DL>
+<DL><DT><B>Returns:</B><DD>an array describing the parameters this applet looks for.</DD>
+</DL>
+<HR>
+
+<H3>play</H3>
+<PRE>
+public void <B>play</B>(URL&nbsp;url)</PRE>
+<DL><DD>Plays the audio clip at the specified absolute URL. Nothing happens if the audio clip cannot be found.<DL><DD></DD></DL></DD>
+</DL>
+<DL><DT><B>Parameters:</B><DD><CODE>url</CODE> - an absolute URL giving the location of the audio clip.</DD>
+</DL>
+<HR>
+
+<H3>play</H3>
+<PRE>
+public void <B>play</B>(URL&nbsp;url,
+                 String&nbsp;name)</PRE>
+<DL><DD>Plays the audio clip given the URL and a specifier that is relative to it. Nothing happens if the audio clip cannot be found.<DL><DD></DD></DL></DD>
+</DL>
+<DL><DT><B>Parameters:</B><DD><CODE>url</CODE> - an absolute URL giving the base location of the audio clip.</DD>
+<DD><CODE>name</CODE> - the location of the audio clip, relative to the <code>url</code> argument.</DD>
+</DL>
+<HR>
+
+<H3>init</H3>
+<PRE>
+public void <B>init</B>()</PRE>
+<DL><DD>Called by the browser or applet viewer to inform this applet that it has been loaded into the system. It is always called before the first time that the <code>start</code> method is called. <p> A subclass of <code>Applet</code> should override this method if it has initialization to perform. For example, an applet with threads would use the <code>init</code> method to create the threads and the <code>destroy</code> method to kill them. <p> The implementation of this method provided by the <code>Applet</code> class does nothing.<DL><DD></DD></DL></DD>
+</DL>
+<DL><DT><B>See Also:</B><DD>java.applet.Applet#destroy()</DD>
+<DD>java.applet.Applet#start()</DD>
+<DD>java.applet.Applet#stop()</DD>
+</DL>
+<HR>
+
+<H3>start</H3>
+<PRE>
+public void <B>start</B>()</PRE>
+<DL><DD>Called by the browser or applet viewer to inform this applet that it should start its execution. It is called after the <code>init</code> method and each time the applet is revisited in a Web page. <p> A subclass of <code>Applet</code> should override this method if it has any operation that it wants to perform each time the Web page containing it is visited. For example, an applet with animation might want to use the <code>start</code> method to resume animation, and the <code>stop</code> method to suspend the animation. <p> The implementation of this method provided by the <code>Applet</code> class does nothing.<DL><DD></DD></DL></DD>
+</DL>
+<DL><DT><B>See Also:</B><DD>java.applet.Applet#destroy()</DD>
+<DD>java.applet.Applet#init()</DD>
+<DD>java.applet.Applet#stop()</DD>
+</DL>
+<HR>
+
+<H3>stop</H3>
+<PRE>
+public void <B>stop</B>()</PRE>
+<DL><DD>Called by the browser or applet viewer to inform this applet that it should stop its execution. It is called when the Web page that contains this applet has been replaced by another page, and also just before the applet is to be destroyed. <p> A subclass of <code>Applet</code> should override this method if it has any operation that it wants to perform each time the Web page containing it is no longer visible. For example, an applet with animation might want to use the <code>start</code> method to resume animation, and the <code>stop</code> method to suspend the animation. <p> The implementation of this method provided by the <code>Applet</code> class does nothing.<DL><DD></DD></DL></DD>
+</DL>
+<DL><DT><B>See Also:</B><DD>java.applet.Applet#destroy()</DD>
+<DD>java.applet.Applet#init()</DD>
+</DL>
+<HR>
+
+<H3>destroy</H3>
+<PRE>
+public void <B>destroy</B>()</PRE>
+<DL><DD>Called by the browser or applet viewer to inform this applet that it is being reclaimed and that it should destroy any resources that it has allocated. The <code>stop</code> method will always be called before <code>destroy</code>. <p> A subclass of <code>Applet</code> should override this method if it has any operation that it wants to perform before it is destroyed. For example, an applet with threads would use the <code>init</code> method to create the threads and the <code>destroy</code> method to kill them. <p> The implementation of this method provided by the <code>Applet</code> class does nothing.<DL><DD></DD></DL></DD>
+</DL>
+<DL><DT><B>See Also:</B><DD>java.applet.Applet#init()</DD>
+<DD>java.applet.Applet#start()</DD>
+<DD>java.applet.Applet#stop()</DD>
+</DL>
+<HR>
+
+<H3>getAccessibleContext</H3>
+<PRE>
+public AccessibleContext <B>getAccessibleContext</B>()</PRE>
+<DL><DD>Gets the AccessibleContext associated with this Applet. For applets, the AccessibleContext takes the form of an AccessibleApplet. A new AccessibleApplet instance is created if necessary.<DL><DD></DD></DL></DD>
+</DL>
+<DL><DT><B>Returns:</B><DD>an AccessibleApplet that serves as the AccessibleContext of this Applet</DD>
+</DL>
+<HR>
+
+</BODY>
+</HTML>

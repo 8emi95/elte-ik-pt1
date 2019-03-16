@@ -1,0 +1,4 @@
+Az elõadáson bemutatott LEGO feladat naív és javított változatát
+elemezzük erõforrásigény szempontjából. Futtassuk a mellékelt
+projekteket és használjuk a VisualVM eszközt, hogy megmutassuk
+melyik változat mennyi memóriát használ.

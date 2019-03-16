@@ -1,0 +1,18 @@
+MenuTest.java és ImageTest.java számára be kell állítani a NetBeans-ben
+a Working Directory-t, csak így találja meg a képeket.
+Az icons ill. az images mappa elérési útvonalát kell megadni.
+A Working Directory beállítása a NetBeans-ben:
+A Project fülön a jobb egérgombbal a projekt ikonjára kell kattintani,
+majd a Properties menüpontot választani.
+A Project Properties ablakban:
+Categories: Run -> Working Directory: beállítható
+
+FontSetter használatához a forráskódok main() metódusában a
+//FontSetter-t ki kell venni a kommentbõl.
+Ezután parancssori paraméterként megadható az alkalmazás ablakának a
+Font mérete.
+A parancssori paraméter beállítása a NetBeans-ben:
+A Project fülön a jobb egérgombbal a projekt ikonjára kell kattintani,
+majd a Properties menüpontot választani.
+A Project Properties ablakban:
+Categories: Run -> Argumnts: például legyen 22

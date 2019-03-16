@@ -1,0 +1,277 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML><!--JBuilder QuickDoc-->
+<HEAD>
+<TITLE>Class javax.swing.JApplet</TITLE><META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+</HEAD>
+<BODY>
+
+<H2>
+<FONT SIZE="-1">javax.swing</FONT>
+<BR>Class JApplet</H2>
+<DL>
+<DT>public class <B>JApplet</B><DT>extends Applet<DT>implements Accessible, RootPaneContainer
+</DL>
+<DL><DD>An extended version of java.applet.Applet that adds support for the JFC/Swing component architecture. You can find task-oriented documentation about using <code>JApplet</code> in <em>The Java Tutorial</em>, in the section <a href="http://java.sun.com/docs/books/tutorial/uiswing/components/applet.html">How to Make Applets</a>. <p> The JApplet class is slightly incompatible with java.applet.Applet. JApplet contains a JRootPane as it's only child. The <b>contentPane</b> should be the parent of any children of the JApplet. This is different than java.applet.Applet, e.g. to add a child to an an java.applet.Applet you'd write: <pre>
+applet.add(child);
+</pre> However using JApplet you need to add the child to the JApplet's contentPane instead: <pre>
+applet.getContentPane().add(child);
+</pre> The same is true for setting LayoutManagers, removing components, listing children, etc. All these methods should normally be sent to the contentPane() instead of the JApplet itself. The contentPane() will always be non-null. Attempting to set it to null will cause the JApplet to throw an exception. The default contentPane() will have a BorderLayout manager set on it. <p> Please see the JRootPane documentation for a complete description of the contentPane, glassPane, and layeredPane properties. <p> For the keyboard keys used by this component in the standard Look and Feel (L&F) renditions, see the <a href="doc-files/Key-Index.html#JApplet"><code>JApplet</code> key assignments</a>. <p> <strong>Warning:</strong> Serialized objects of this class will not be compatible with future Swing releases. The current serialization support is appropriate for short term storage or RMI between applications running the same version of Swing. As of 1.4, support for long term storage of all JavaBeans<sup><font size="-2">TM</font></sup> has been added to the <code>java.beans</code> package. Please see <A HREF="java.beans.XMLEncoder">java.beans.XMLEncoder</A>.<DL><DD></DD></DL></DD>
+</DL>
+<DL><DT><B>Version:</B><DD>1.56 01/23/03</DD>
+<DT><B>Author:</B><DD>Arnaud Weber</DD>
+</DL>
+<TABLE BORDER="1" CELLPADDING="3" CELLSPACING="0" WIDTH="100%">
+<TR BGCOLOR="#CCCCFF"><TD COLSPAN=1><FONT SIZE="+2">
+<B>Field Detail</B>
+</FONT></TD></TR></TABLE>
+
+<H3>rootPane</H3>
+<PRE>
+protected JRootPane <B>rootPane</B></PRE>
+<DL><DD><DL><DD></DD></DL></DD>
+</DL>
+<DL><DT><B>See Also:</B><DD>#getRootPane</DD>
+<DD>#setRootPane</DD>
+</DL>
+<HR>
+
+<H3>rootPaneCheckingEnabled</H3>
+<PRE>
+protected boolean <B>rootPaneCheckingEnabled</B></PRE>
+<DL><DD><DL><DD></DD></DL></DD>
+</DL>
+<DL><DT><B>See Also:</B><DD>#isRootPaneCheckingEnabled</DD>
+<DD>#setRootPaneCheckingEnabled</DD>
+</DL>
+<HR>
+
+<TABLE BORDER="1" CELLPADDING="3" CELLSPACING="0" WIDTH="100%">
+<TR BGCOLOR="#CCCCFF"><TD COLSPAN=1><FONT SIZE="+2">
+<B>Constructor Detail</B>
+</FONT></TD></TR></TABLE>
+
+<H3>JApplet</H3>
+<PRE>
+public <B>JApplet</B>()</PRE>
+<DL><DD>Creates a swing applet instance. <p> This constructor sets the component's locale property to the value returned by <code>JComponent.getDefaultLocale</code>.<DL><DD></DD></DL></DD>
+</DL>
+<DL><DT><B>Throws:</B><DD><CODE>HeadlessException</CODE> - if GraphicsEnvironment.isHeadless() returns true.</DD>
+<DT><B>See Also:</B><DD>java.awt.GraphicsEnvironment#isHeadless</DD>
+<DD>JComponent#getDefaultLocale</DD>
+</DL>
+<HR>
+
+<TABLE BORDER="1" CELLPADDING="3" CELLSPACING="0" WIDTH="100%">
+<TR BGCOLOR="#CCCCFF"><TD COLSPAN=1><FONT SIZE="+2">
+<B>Method Detail</B>
+</FONT></TD></TR></TABLE>
+
+<H3>createRootPane</H3>
+<PRE>
+protected JRootPane <B>createRootPane</B>()</PRE>
+<DL><DD>Called by the constructor methods to create the default rootPane.<DL><DD></DD></DL></DD>
+</DL>
+<DL></DL>
+<HR>
+
+<H3>update</H3>
+<PRE>
+public void <B>update</B>(Graphics&nbsp;g)</PRE>
+<DL><DD>Just calls <code>paint(g)</code>. This method was overridden to prevent an unnecessary call to clear the background.<DL><DD></DD></DL></DD>
+</DL>
+<DL></DL>
+<HR>
+
+<H3>setJMenuBar</H3>
+<PRE>
+public void <B>setJMenuBar</B>(JMenuBar&nbsp;menuBar)</PRE>
+<DL><DD>Sets the menubar for this applet.<DL><DD></DD></DL></DD>
+</DL>
+<DL><DT><B>Parameters:</B><DD><CODE>menuBar</CODE> - the menubar being placed in the applet</DD>
+<DT><B>See Also:</B><DD>#getJMenuBar</DD>
+</DL>
+<HR>
+
+<H3>getJMenuBar</H3>
+<PRE>
+public JMenuBar <B>getJMenuBar</B>()</PRE>
+<DL><DD>Returns the menubar set on this applet.<DL><DD></DD></DL></DD>
+</DL>
+<DL><DT><B>See Also:</B><DD>#setJMenuBar</DD>
+</DL>
+<HR>
+
+<H3>isRootPaneCheckingEnabled</H3>
+<PRE>
+protected boolean <B>isRootPaneCheckingEnabled</B>()</PRE>
+<DL><DD><DL><DD></DD></DL></DD>
+</DL>
+<DL><DT><B>Returns:</B><DD>true if add and setLayout should be checked</DD>
+<DT><B>See Also:</B><DD>#addImpl</DD>
+<DD>#setLayout</DD>
+<DD>#setRootPaneCheckingEnabled</DD>
+</DL>
+<HR>
+
+<H3>setRootPaneCheckingEnabled</H3>
+<PRE>
+protected void <B>setRootPaneCheckingEnabled</B>(boolean&nbsp;enabled)</PRE>
+<DL><DD>If true then calls to add() and setLayout() will cause an exception to be thrown.<DL><DD></DD></DL></DD>
+</DL>
+<DL><DT><B>See Also:</B><DD>#addImpl</DD>
+<DD>#setLayout</DD>
+<DD>#isRootPaneCheckingEnabled</DD>
+</DL>
+<HR>
+
+<H3>createRootPaneException</H3>
+<PRE>
+private Error <B>createRootPaneException</B>(String&nbsp;op)</PRE>
+<DL><DD>Create an runtime exception with a message like: <pre>
+"Do not use JApplet.add() use JApplet.getContentPane().add() instead"
+</pre><DL><DD></DD></DL></DD>
+</DL>
+<DL></DL>
+<HR>
+
+<H3>addImpl</H3>
+<PRE>
+protected void <B>addImpl</B>(Component&nbsp;comp,
+                       Object&nbsp;constraints,
+                       int&nbsp;index)</PRE>
+<DL><DD>By default, children may not be added directly to a this component, they must be added to its contentPane instead. For example: <pre>
+thiComponent.getContentPane().add(child)
+</pre> An attempt to add to directly to this component will cause an runtime exception to be thrown. Subclasses can disable this behavior.<DL><DD></DD></DL></DD>
+</DL>
+<DL><DT><B>Throws:</B><DD><CODE>Error</CODE> - if called with rootPaneChecking true</DD>
+<DT><B>See Also:</B><DD>#setRootPaneCheckingEnabled</DD>
+</DL>
+<HR>
+
+<H3>remove</H3>
+<PRE>
+public void <B>remove</B>(Component&nbsp;comp)</PRE>
+<DL><DD>Removes the specified component from this container.<DL><DD></DD></DL></DD>
+</DL>
+<DL><DT><B>Parameters:</B><DD><CODE>comp</CODE> - the component to be removed</DD>
+<DT><B>See Also:</B><DD>#add</DD>
+</DL>
+<HR>
+
+<H3>setLayout</H3>
+<PRE>
+public void <B>setLayout</B>(LayoutManager&nbsp;manager)</PRE>
+<DL><DD>By default the layout of this component may not be set, the layout of its contentPane should be set instead. For example: <pre>
+thisComponent.getContentPane().setLayout(new GridLayout(1, 2))
+</pre> An attempt to set the layout of this component will cause an runtime exception to be thrown. Subclasses can disable this behavior.<DL><DD></DD></DL></DD>
+</DL>
+<DL><DT><B>Throws:</B><DD><CODE>Error</CODE> - if called with rootPaneChecking true</DD>
+<DT><B>See Also:</B><DD>#setRootPaneCheckingEnabled</DD>
+</DL>
+<HR>
+
+<H3>getRootPane</H3>
+<PRE>
+public JRootPane <B>getRootPane</B>()</PRE>
+<DL><DD>Returns the rootPane object for this applet.<DL><DD></DD></DL></DD>
+</DL>
+<DL><DT><B>See Also:</B><DD>#setRootPane</DD>
+<DD>RootPaneContainer#getRootPane</DD>
+</DL>
+<HR>
+
+<H3>setRootPane</H3>
+<PRE>
+protected void <B>setRootPane</B>(JRootPane&nbsp;root)</PRE>
+<DL><DD>Sets the rootPane property. This method is called by the constructor.<DL><DD></DD></DL></DD>
+</DL>
+<DL><DT><B>Parameters:</B><DD><CODE>root</CODE> - the rootPane object for this applet</DD>
+<DT><B>See Also:</B><DD>#getRootPane</DD>
+</DL>
+<HR>
+
+<H3>getContentPane</H3>
+<PRE>
+public Container <B>getContentPane</B>()</PRE>
+<DL><DD>Returns the contentPane object for this applet.<DL><DD></DD></DL></DD>
+</DL>
+<DL><DT><B>See Also:</B><DD>#setContentPane</DD>
+<DD>RootPaneContainer#getContentPane</DD>
+</DL>
+<HR>
+
+<H3>setContentPane</H3>
+<PRE>
+public void <B>setContentPane</B>(Container&nbsp;contentPane)</PRE>
+<DL><DD>Sets the contentPane property. This method is called by the constructor.<DL><DD></DD></DL></DD>
+</DL>
+<DL><DT><B>Parameters:</B><DD><CODE>contentPane</CODE> - the contentPane object for this applet</DD>
+<DT><B>Throws:</B><DD><CODE>java.awt.IllegalComponentStateException</CODE> - (a runtime exception) if the content pane parameter is null</DD>
+<DT><B>See Also:</B><DD>#getContentPane</DD>
+<DD>RootPaneContainer#setContentPane</DD>
+</DL>
+<HR>
+
+<H3>getLayeredPane</H3>
+<PRE>
+public JLayeredPane <B>getLayeredPane</B>()</PRE>
+<DL><DD>Returns the layeredPane object for this applet.<DL><DD></DD></DL></DD>
+</DL>
+<DL><DT><B>Throws:</B><DD><CODE>java.awt.IllegalComponentStateException</CODE> - (a runtime exception) if the layered pane parameter is null</DD>
+<DT><B>See Also:</B><DD>#setLayeredPane</DD>
+<DD>RootPaneContainer#getLayeredPane</DD>
+</DL>
+<HR>
+
+<H3>setLayeredPane</H3>
+<PRE>
+public void <B>setLayeredPane</B>(JLayeredPane&nbsp;layeredPane)</PRE>
+<DL><DD>Sets the layeredPane property. This method is called by the constructor.<DL><DD></DD></DL></DD>
+</DL>
+<DL><DT><B>Parameters:</B><DD><CODE>layeredPane</CODE> - the layeredPane object for this applet</DD>
+<DT><B>See Also:</B><DD>#getLayeredPane</DD>
+<DD>RootPaneContainer#setLayeredPane</DD>
+</DL>
+<HR>
+
+<H3>getGlassPane</H3>
+<PRE>
+public Component <B>getGlassPane</B>()</PRE>
+<DL><DD>Returns the glassPane object for this applet.<DL><DD></DD></DL></DD>
+</DL>
+<DL><DT><B>See Also:</B><DD>#setGlassPane</DD>
+<DD>RootPaneContainer#getGlassPane</DD>
+</DL>
+<HR>
+
+<H3>setGlassPane</H3>
+<PRE>
+public void <B>setGlassPane</B>(Component&nbsp;glassPane)</PRE>
+<DL><DD>Sets the glassPane property. This method is called by the constructor.<DL><DD></DD></DL></DD>
+</DL>
+<DL><DT><B>Parameters:</B><DD><CODE>glassPane</CODE> - the glassPane object for this applet</DD>
+<DT><B>See Also:</B><DD>#getGlassPane</DD>
+<DD>RootPaneContainer#setGlassPane</DD>
+</DL>
+<HR>
+
+<H3>paramString</H3>
+<PRE>
+protected String <B>paramString</B>()</PRE>
+<DL><DD>Returns a string representation of this JApplet. This method is intended to be used only for debugging purposes, and the content and format of the returned string may vary between implementations. The returned string may be empty but may not be <code>null</code>.<DL><DD></DD></DL></DD>
+</DL>
+<DL><DT><B>Returns:</B><DD>a string representation of this JApplet.</DD>
+</DL>
+<HR>
+
+<H3>getAccessibleContext</H3>
+<PRE>
+public AccessibleContext <B>getAccessibleContext</B>()</PRE>
+<DL><DD>Gets the AccessibleContext associated with this JApplet. For JApplets, the AccessibleContext takes the form of an AccessibleJApplet. A new AccessibleJApplet instance is created if necessary.<DL><DD></DD></DL></DD>
+</DL>
+<DL><DT><B>Returns:</B><DD>an AccessibleJApplet that serves as the AccessibleContext of this JApplet</DD>
+</DL>
+<HR>
+
+</BODY>
+</HTML>

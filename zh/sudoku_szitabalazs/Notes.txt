@@ -1,0 +1,28 @@
+A részfeladatokhoz:
+
+1.
+- Itt természetesen a kezdeti feltöltést meg lehetne kulturáltabban is oldani (pl. fájlból beolvasással), de mivel alapvetően nem ez a lényeg, csak a tesztelhetőség miatt van, ettől eltekintettem
+- A keretezésre egy másik ötlet: legyen a gridünk 3×3-as, amibe kerüljön 9 container. Ezek kerete legyen vastag, és ezekbe kerüljön 9-9 kis mező már a vékonyabb keretekkel. Korrekt megoldás, bár kicsit macerásabb utána a mezőket frissítgetni
+- Az "üres" problematikát úgy oldottam meg, hogy mivel minden gomb értéke a háttérben egy int, ahhoz a másra nem használt 0-t rendeltem. Amikor egy mező értéke 0, azt a számot nem írjuk ki, valamint ahogy inkrementáljuk az értékeket, nem lehet visszatérni a 0-hoz. Így mindenféle külön változó nélkül ami az "üres"-séget jelezné meg lehetett oldani ezt a funkciót
+
+2.
+- Érdemes a blokkok méretezését általánosan, "képlettel" megírni. Ez a győzelmi feltétel ellenőrzését is segíti: könnyen átírhatom 4×4-esre, így könnyebben kattintom végig; illetve a +2-es feladatra is előkészít
+
+3.
+- Itt az architektúra olyan, hogy a Model se csak passzív, hanem amikor valami érdekes dolog történik (nyer a felhasználó, az egyik mező értéke változik, telik az idő, stb.) akkor ő szól a View-nak. Ha a másik, picit egyszerűbb megoldást választanánk, azaz hogy mindig a View kérdezi a Modelt amikor úgy érzi, fontos, akkor a Timert elég bajosan tudnánk csak integrálni. Úgy gondolom, ha a Timer által mért valami az kifejezetten a játékszabály része (pl. 10 mp-enként random tűnjön el egy már kitalált mező értéke...), akkor semmi keresnivalója nincs a View-ban. Ilyen esetben szerencsésebb vagy az itteni, kétirányú kötéses architektúrát választani, vagy esetleg a View-ba IS berakni egy Timert, ami néha lekéri a Modelből a dolgok értékét, és az alapján frissíti a View-t. Ilyen esetben azonban, amikor csak a játékidőt mérjük, és ha ezt a Timert és a hozzá kapcsolódó feliratot kiszednénk, a játék működésén nem változtatna semmit, ilyenkor tehát kerülhet a Timer a View-ba és maradhatunk az egyirányú kötéses architektúránál, ha úgy egyszerűbb elkészíteni a programot
+
+4.
+- Mint mindig, érdemes elve így csinálni + általánosságban: előre olvasni, és úgy készíteni a programot, hogy a későbbi feladatok során se kelljen nagyon átalakítani. Ugyanakkor addig ne kezdjünk el egy későbbi feladatot, amíg a korábbi nincs kész
+- És bár a Clean Code nem elvárás, de adjunk magunkra, csináljuk szépen amit csinálunk
+
++1.
+- Itt jön  képbe a MouseAdapter, ami annyit tud a sima ActionListenerhez képest, hogy nem csak egy, a "fő" akciót képes kezelni, hanem mindenféle egéreseményre lő. Ez eddig ugyanaz, mint amit a "MouseListener" adna, az Adapter annyival szerencsésebb, hogy a nekünk felesleges műveletek alapból meg vannak valósítva benne üres törzzsel, így nekünk csak a bal- és jobb klikket kell megírnunk
+- Most már nem pusztán egy int reprezentál egy mezőt, hanem az int mellé bekerült egy bool. Láthatjátok, ehhez bevezettem egy saját típust
+- Roppant fontos, hogy végezzünk "regressziós teszt"-et. Ez azt jelenti, hogy vizsgáljuk meg, nem romlott-e el valamelyik korábbi funkció. Itt pl. át kellett valamelyest írni a játék vége ellenőtzést, hiszen a korábbi int reprezentáció helyett már Object-leszármazott került a Modelbe, a sima == összehasonlítás megbukott. Szebb megoldás equals()-t (és akkor már hashCode()-ot!) írni, mint a getValue()-kat hívogatni mindenhol
+
++2.
+- Használjuk a JOptionPane-t ha már van. Érdemes utánagoogle-zni, netán zh előtt lementeni egy-két tutorial/összefoglaló oldalt róla..., nagyon sokféle dolgot lehet megvalósítani vele, és viszonylag intuitív a paraméterezése. Használjuk a ctrl+space-re előugró kontextusfüggő segítséget! Meg lehet ezeket kézzel is csinálni, esetleg Radio Button csoporttal, de sokkal szebb biztos nem lesz, viszont rengeteg idő elmegy vele
+- Külön érdemes megfigyelni a saját "JLabel"-t (igazából nem is kellett volna JLabel leszármazottnak lennie), amit készítettem. Amikor hozzáadom mint option, akkor a mindenkori toString() metódusa alapján fog megjelenni a legördülő listában, de ha kijelölöm az egyik elemet, akkor maga ez a saját osztály egyik példánya fog kijelölődni, amiből persze már nagyon könnyen tudok mögöttes adatokat lekérdezni
+
++3.
+- Úgy is megvalósíthattam volna, hogy a FieldValue-ba egy újabb adattagot rakok, isValid() néven, amit minden kattintáskor előbb "nullázok", majd kiszámolok, és a mezőfrissítő függvény ez alapján színez. Talán tisztább megoldás lett volna, és az interfészem is eggyel egyszerűbb. A mostani megoldásban van egy nehezen látható megkötés: nagyon számít a két frissítés sorrendje. Előbb frissítem be a sárga-fehér hátteret, és még erre jön rá az, hogy piros vagy nem piros. Ha fordítva lenne, akkor az problémát okozhatna

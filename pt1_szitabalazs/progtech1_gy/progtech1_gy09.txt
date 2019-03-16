@@ -1,0 +1,9 @@
+prog
+síkidomak kezelése
+terület, kerület, konvex, konkáv
+kör v sokszög
+sokszög szabályos v nem
+felületre fel lehet dobálni az alakzatokat
+képként mentás
+xml-ben mentés (jól olvasható lista síkiomokról)
+program sajá formátumával mentés

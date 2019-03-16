@@ -1,0 +1,5 @@
+src\csomag1\csomag11\Interfesz1.java
+src\csomag1\csomag11\Osztaly2.java
+src\csomag1\csomag12\csomag121\Osztaly3.java
+src\csomag1\csomag12\Osztaly4.java
+src\csomag2\Osztaly5.java

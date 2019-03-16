@@ -1,0 +1,5 @@
+1482410814981	Delete element
+1482411663135	Extract local variable 'field'
+1482412751201	Encapsulate field 'x'
+1482416402269	Extract constant 'PLAY_AGAIN'
+1482416447563	Extract constant 'YES_NO_OPTION'

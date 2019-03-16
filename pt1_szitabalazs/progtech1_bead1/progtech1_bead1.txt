@@ -1,0 +1,19 @@
+határidõ: nov28 (késõbb jegylevonás)
+
+adatok fájlban vmilyen módon
+adat mindig fájlból, minden mást bele lehet égetni a kódba
+
+foreach szerkezet legyen
+for ( : )
+fájlban soronként adatok (elején szám maybe)
+listába / vmilyen collectionben tárolni
+foreachcsel bejárni
+vmilyen fv-t kell meghívni az akt elemen
+
+doksi...:
+osztálydiagram (állatkerteshez hasonló)
+metódusok rövid leírása (mit csinál, ki-/bemenet)
+tesztfájlok mellékelése
+dobjunk kivételt (hal-nál getvoice?)
+
+nov21: doodle szavazás - konzi
